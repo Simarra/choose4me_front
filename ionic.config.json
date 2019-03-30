@@ -1,0 +1,7 @@
+{
+  "name": "choose4me",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
