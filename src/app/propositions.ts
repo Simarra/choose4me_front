@@ -1,8 +1,9 @@
 export class Proposition {
     url: string;
     id: number;
-    name: string;
     user_from: string;
-    picture_path: string;
-    message: string;
+    picture_1_path: string;
+    picture_2_path: string;
+    choice_1: string;
+    choice_2: string;
   }
