@@ -10,7 +10,7 @@ import { AddPage } from './add.page';
     IonicModule,
     CommonModule,
     FormsModule,
-    RouterModule.forChild([{ path: '', component: AddPage }])
+    //RouterModule.forChild([{ path: '', component: AddPage }])
   ],
   declarations: [AddPage]
 })

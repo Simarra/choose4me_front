@@ -10,7 +10,7 @@ import { EditPage } from './edit.page';
     IonicModule,
     CommonModule,
     FormsModule,
-    RouterModule.forChild([{ path: '', component: EditPage }])
+    //RouterModule.forChild([{ path: '', component: EditPage }])
   ],
   declarations: [EditPage]
 })
