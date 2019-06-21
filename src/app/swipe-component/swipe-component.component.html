@@ -1,10 +1,14 @@
 <p>
   swipe-component works!
 </p>
-<div
-    (swipe)="onSwipe($event)"
-    (swipeleft)="onSwipeLeft($event)"
-    (swiperight)="onSwipeRight($event)"
-    (swipeup)="onSwipeUp($event)"
-    (swipedown>)="onSwipeDown($event)"
+
+
+<div class="left-card"
+    [@cardAnimator]="animationState"
+    (@cardAnimator.done)="resetAnimationState()"
+    (swipeleft)="startAnimation('FadeOutLeft')"
+    (swiperight)="startAnimation('FadeOut')"
+    (swipeup)="startAnimation('FadeOut')"
+    (swipedown)="startAnimation('wobble')">
+    yolo
 </div>
