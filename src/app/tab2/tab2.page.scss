@@ -1,1 +1,62 @@
+.logging-page-container {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(128, 128, 128, 0.8);
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 
+  .logging-form-wrapper {
+    background-color: white;
+    border-radius: 0.4em;
+    padding: 1em;
+    margin: 2em;
+    font-weight: bold;
+  }
+
+  form > * {
+    width: 100%;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logging-text-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h2 {
+      color: #eee;
+    }
+    p {
+      color: #eee;
+      font-style: italic;
+    }
+  }
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  background-image: linear-gradient(to right, #70e1f5 0%, #ffd194 51%, #70e1f5 100%);
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 12px;
+  //margin: 10px;
+  padding: 15px;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+}
+input[type="submit"]:hover {
+  background-position: right center;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  border-radius: 5px;
+  height: 2em;
+}
