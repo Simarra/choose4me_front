@@ -1,15 +1,13 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import { LoginScreenComponent } from './login-screen/login-screen.component';
-import { SwipeComponent } from './swipe-component/swipe-component.component'
+import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  { path: 'login-screen', component: LoginScreenComponent },
-  { path: 'choose', component: SwipeComponent },
+  { path: '', loadChildren: './tabs/tabs.module#TabsPageModule' }
 ];
-
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [
+    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })
+  ],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
