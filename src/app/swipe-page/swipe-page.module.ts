@@ -3,15 +3,16 @@ import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { Tab3Page } from './tab3.page';
+import { SwipeComponent } from './swipe-page.page';
 
 @NgModule({
   imports: [
     IonicModule,
     CommonModule,
     FormsModule,
-    RouterModule.forChild([{ path: '', component: Tab3Page }])
+    SwipeComponent,
+    RouterModule.forChild([{ path: '', component: SwipeComponent }])
   ],
-  declarations: [Tab3Page]
+  declarations: [SwipeComponent]
 })
-export class Tab3PageModule {}
+export class SwipePageModule {}
