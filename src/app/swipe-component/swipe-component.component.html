@@ -3,12 +3,33 @@
 </p>
 
 
-<div class="left-card"
-    [@cardAnimator]="animationState"
-    (@cardAnimator.done)="resetAnimationState()"
-    (swipeleft)="startAnimation('FadeOutLeft')"
-    (swiperight)="startAnimation('FadeOut')"
-    (swipeup)="startAnimation('FadeOut')"
-    (swipedown)="startAnimation('wobble')">
-    yolo
+<div class="left-card" [@cardAnimator]="animationState" (@cardAnimator.done)="resetAnimationState()"
+  (swipeleft)="startAnimation('FadeOutLeft')" (swiperight)="startAnimation('FadeOut')"
+  (swipeup)="startAnimation('FadeOut')" (swipedown)="startAnimation('wobble')">
+
+
+  <div class="head-card-container">
+    <h3>
+      Card Title
+    </h3>
+    <h4>
+      Card text content
+    </h4>
+  </div>
+
+  <div class="metadata-card-container">
+    <p class="card-meta-title">
+      By:
+    </p>
+    <p class="card-meta-content">
+      Jon Doe
+    </p>
+    <p class="card-meta-title">
+      Date:
+    </p>
+    <p class="card-meta-content">
+      16/08/2020
+    </p>
+
+  </div>
 </div>
