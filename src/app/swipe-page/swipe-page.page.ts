@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: 'swipe-page.page.html',
   styleUrls: ['swipe-page.page.scss']
 })
-export class SwipeComponent {
+export class SwipePage {
 
   constructor() {}
 
