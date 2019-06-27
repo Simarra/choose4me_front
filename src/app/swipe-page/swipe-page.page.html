@@ -8,10 +8,16 @@
 YOLO
 
 <ion-content>
-<div swingStack #swingStack>
-     <ion-card swingCard #swingCards>
-       COUCOU LOL
-     </ion-card>
-</div>
+  <div swingStack #swingStack>
+    <ion-card swingCard #swingCards>
+      <div *ngIf="Proposition.length !== 0">
+        <tr *ngFor="let prop of Proposition">
+          <h3>{{prop.choice1}}</h3>
+          <p>{{prop.user_from}}</p>
+        </tr>
+      </div>
+
+    </ion-card>
+  </div>
 
 </ion-content>

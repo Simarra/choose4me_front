@@ -1,0 +1,17 @@
+{
+"Propositions": [{
+"id": 1,
+"user_from": "Tony Stark",
+    "picture_1_path": "str",
+    "picture_2_path": "str",
+    "choice_1": "choice1",
+    "choice_2": "choice2"
+}, {
+"Propositions": 2,
+"user_from": "Black Widow",
+    "picture_1_path": "pic1path",
+    "picture_2_path": "pic2path",
+    "choice_1": "choice1",
+    "choice_2": "choice2"
+}]
+}

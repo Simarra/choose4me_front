@@ -12,13 +12,13 @@ import { AppComponent } from './app.component';
 //For swipe cards
 import { HttpModule } from '@angular/http';
 import { IonicStorageModule } from '@ionic/storage';
-///For swipe cards
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), IonicStorageModule.forRoot(), AppRoutingModule, HttpModule ],
+  imports: [BrowserModule, HttpClientModule, IonicModule.forRoot(), IonicStorageModule.forRoot(), AppRoutingModule, HttpModule ],
   providers: [
     StatusBar,
     SplashScreen,
